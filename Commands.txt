@@ -1,0 +1,28 @@
+Terminal 1:
+
+cd simplechaincode
+cd chaincode-essentials/client
+ ./start.sh 
+
+ Terminal 2
+ cd simplechaincode
+ cd apiserver/
+ nvm use 12
+$ node enrollAdmin.js
+$ node registerUser.js
+$ node apiserver.js
+
+Angular app:
+cd MachineSmartIdentity/
+nvm use 12
+npm start
+
+
+Miscelleneous:
+curl http://localhost:8080/api/query/1
+
+curl -d '{"machineid":"mac4","status":"ready","dof":"16-may-2021","manufacturer":"org1.example.com","owner":"org1.example.com","price":"100000"}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/addmachine
+
+{"machineId":"2","currentPrice":"23000","dof":"22-may-2021","manufacturer":"org1","owner":"org1","state":"Ready"}
+docker rm -f $(docker ps -a -q)
+docker volume rm $(docker volume ls -q)
