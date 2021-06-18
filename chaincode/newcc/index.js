@@ -1,5 +1,5 @@
 'use strict';
 
-const testContract = require('./logic');
+const DigitalMachineContract = require('./digitalmachinecontract');
 
-module.exports.contracts = [ testContract ];
+module.exports.contracts = [ DigitalMachineContract ];
