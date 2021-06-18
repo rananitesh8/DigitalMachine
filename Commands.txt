@@ -32,4 +32,5 @@ Git Commands:
 git add .
 git commit -m "chaincode"
 git remote -v
-git push -u DigitalMachine master
+git push -u origin main
+git rm --cached . -rf
