@@ -1,0 +1,10 @@
+<div>   
+    Enter Machine Id: <input type="text" [(ngModel)]="machineId" /> <br /> 
+    <button (click)="getmachineDetails()">Get Machine Details</button><br />
+    <div *ngIf="validationMessage">
+    Validation Message: <label>{{validationMessage}}  </label><br />
+    </div>
+    <div *ngIf="machineInformation">
+    Machine Information: <label>{{machineInformation}}</label> <br />
+    </div>  
+</div>

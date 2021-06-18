@@ -1,0 +1,15 @@
+<div>   
+    Enter Machine Id: <input type="text" [(ngModel)]="machine.machineid" /> <br /> 
+    Enter Price: <input type="text" [(ngModel)]="machine.price" /> <br /> 
+    Enter Date of Manufacturing: <input type="text" [(ngModel)]="machine.dof" /> <br /> 
+    Enter Manufacturer: <input type="text" [(ngModel)]="machine.manufacturer" /> <br /> 
+    Enter Owner: <input type="text" [(ngModel)]="machine.owner" /> <br /> 
+    Enter State: <input type="text" [(ngModel)]="machine.status" /> <br /> 
+    <button (click)="saveMachineDetails()">Add New Machine</button><br />
+    <div *ngIf="validationMessage">
+    Validation Message: <label>{{validationMessage}}  </label><br />
+    </div>
+    <div *ngIf="machineInformation">
+    Machine Information: <label>{{machineInformation}}</label> <br />
+    </div>  
+</div>
