@@ -26,3 +26,10 @@ curl -d '{"machineid":"mac4","status":"ready","dof":"16-may-2021","manufacturer"
 {"machineId":"2","currentPrice":"23000","dof":"22-may-2021","manufacturer":"org1","owner":"org1","state":"Ready"}
 docker rm -f $(docker ps -a -q)
 docker volume rm $(docker volume ls -q)
+
+
+Git Commands:
+git add .
+git commit -m "chaincode"
+git remote -v
+git push -u DigitalMachine master
